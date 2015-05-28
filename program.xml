@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program>
+    <states>q0 q1 q2</states>
+    <alphabet>a b</alphabet>
+    <working>C B</working>
+    <start>q0</start>
+    <end>q2</end>
+    <delta>
+        <q0>
+            <a>
+                <move>q1</move>
+                <alphabet>C</alphabet>
+                <direction>L</direction>
+            </a>
+            <b>
+                <move>q0</move>
+                <alphabet>b</alphabet>
+                <direction>R</direction>
+            </b>
+            <C>
+                <move>q0</move>
+                <alphabet>C</alphabet>
+                <direction>R</direction>
+            </C>
+            <B>
+                <move>q2</move>
+                <alphabet>B</alphabet>
+                <direction>N</direction>
+            </B>
+        </q0>
+        <q1>
+            <a>
+                <move>q1</move>
+                <alphabet>a</alphabet>
+                <direction>L</direction>
+            </a>
+            <b>
+                <move>q0</move>
+                <alphabet>C</alphabet>
+                <direction>R</direction>
+            </b>
+            <C>
+                <move>q1</move>
+                <alphabet>C</alphabet>
+                <direction>L</direction>
+            </C>
+            <B>
+                <move>q2</move>
+                <alphabet>B</alphabet>
+                <direction>R</direction>
+            </B>
+        </q1>
+    </delta>
+</program>
